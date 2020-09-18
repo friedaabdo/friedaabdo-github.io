@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
+
+
+body {
+    margin: auto;
+    font-family: "EB+Garamond";
+    background-color: #a2a7a5;
+    position: relative;
+    
+}
+header {
+    background-color: #ffff85;
+    margin: auto;
+    padding-top: 30px;
+    
+}
+#menuArrow{
+    color:  white;
+    font-size: 30px;
+    padding: 0 15px;
+    display: block;
+    background-color: #fd5335; 
+    box-shadow: 0 1px 4px darkgrey;
+    position: fixed;
+    top: 0;
+    z-index: 12;
+    width: 100%;
+}
+nav {
+    display: none;
+    background-color: #fd5335;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 40%;
+    z-index: 11;
+}
+nav a {
+    color: white;
+    display: block;
+    margin-left: 20px;
+    font-size: 20px;
+}
+h1 {
+    font-family: "Rock Salt";
+    font-size: 4.5em;
+    line-height: 120px;
+    color: #0e103d;
+    text-align: center;
+    opacity: 0.7;
+}
+header h3 {
+    color: #a2a7a5;
+    font-size: 35px;
+    font-style: italic;
+    opacity: .6;
+    margin: 0 20px;
+}
+.intro{
+    text-align: center;
+}
+.sectionDivider{
+    background: url('https://res.cloudinary.com/dtsnkndle/image/upload/v1600220228/portfolio%20project/portfoliosectdiv_u8ljg0.png');
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    background-size: cover;
+    background-position: center;
+}
+.purple {
+    background: url('https://res.cloudinary.com/dtsnkndle/image/upload/v1600280129/portfolio%20project/purpleportfoliosectdiv_cochrm.png');
+    background-size: cover;
+    background-position: center;  
+}
+.double {
+    background: url('https://res.cloudinary.com/dtsnkndle/image/upload/v1600434806/portfolio%20project/dblLineportfoliosectdiv_lafktk.png');
+    background-size: cover;
+    background-position: center;  
+}
+main {
+    text-align: center;
+}
+.aboutMe{
+    background-color: #0e103d;
+    color: #a2a7a5;
+    padding-bottom: 40px;
+}
+.carouselExampleCaptions {
+    height: 200px;
+}
+.carousel-indicators {
+    background-color: rgb(0,0,0,.35);
+    z-index: 10;
+}
+.carousel-caption ol {
+    background-color: rgb(0,0,0,.35);
+    z-index: 0;
+}
+.carousel-item img{
+    object-fit: cover;
+    height: 200px;
+}
+.projects div {
+    margin-bottom: 30px;
+}
+.card {
+    background-color: #0e103d;
+ }
+.projects img {
+    max-width: 90%;
+    object-fit: scale-down;
+    border-radius: 5px;
+    margin: auto;
+}
+h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #fd5335;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.projects {
+    background-color:#0e103d;
+}
+/* I borrowed this code from a codepen that i liked @ https://codepen.io/batuhanbas/pen/dyMKjmx */
+.gridContainer:hover .card {
+    filter: blur(15px);
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: 0.9s;
+}
+  
+.gridContainer .card:hover {
+    filter: blur(0);
+    transform: scale(1);
+    opacity: 1;
+    transition: 0.9s;
+}
+  /* end of borrowed code */
+
+/* .projTextArea .button:hover {
+    transform: scale(1.1);
+} */
+.projTextArea {
+    width: 90vw;
+    margin: 10px auto;
+    background-color: rgb(162, 167, 165,0.3);
+    /* border: 2px solid #a2a7a5; */
+    border-radius: 5px;
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.projects div:last-of-type {
+    margin-bottom: 0;
+}
+h3 {
+    color: #ffff85;
+    font-size: 32px;
+}
+.projDescription {
+    margin: 0 10px 10px 10px;
+    color: white;
+    font-weight: 500;
+    
+}
+.projTextArea button {
+    border: none;
+    background-color: #fd5335;
+    margin-bottom: 10px;
+    width: 40%;
+    border-radius: 5px;
+    color: white;
+}
+form {
+    font-family: 'EB+Garamond';
+}
+form input {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 50%;
+}
+textarea {
+    width: 50%;
+    
+}
+#submitBtn {
+    display: block;
+    margin: auto;
+    border: none;
+    background-color: #fd5335;
+    padding-bottom: 10px;
+    width: 40%;
+    border-radius: 5px;
+    color: white;
+}
+.contactMe {
+    background-color: #ffff85;
+}
+.contactMe p {
+    color: #a2a7a5;
+    font-size: 2em;
+    padding: 5%;
+    margin-bottom: 0;
+    opacity: 0.8;
+}
+footer{
+    background-color: #0e103d;
+    color: white;
+
+}
+footer p {
+    margin-bottom: 0;
+    /* color: #0e103d; */
+}
+
+@media screen and (min-width: 540px){
+    .sectionDivider{
+        height: 150px;
+    }
+    .carouselExampleCaptions {
+        height: 430px;
+    
+    }
+    .carousel-item img{
+        object-fit: cover;
+        height: 430px;
+        width: 100%;
+        
+    }
+    .projects {
+        background-color:#0e103d;
+     
+    }
+    .gridContainer {
+        display: grid;
+        grid-template-rows: auto;
+    }
+    .card {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       background-color: #0e103d;
+    }
+    .projects img {
+        max-width: 90%;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin: auto;
+
+    }
+    .projTextArea {
+        width: 90%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin: 0 auto;
+        font-size: 1.2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 2em;
+    }
+}
+
+
+
+@media screen and (min-width: 768px){
+    nav {
+        display: block;
+        background-color: #fd5335;
+        padding-top: 10px;
+        position: fixed;
+        top: 0;
+        z-index: 11;
+        width: 100%;
+        max-width: 1024px;
+        box-shadow: 0 1px 4px darkgrey;
+    }
+    nav a {
+        display: inline;
+        text-decoration: none;
+        font-family: "Rock Salt";
+        font-size: 1em; 
+    }
+    #menuArrow{
+        display: none;
+    }
+    .sectionDivider{
+        height: 200px;
+    }
+    h1 {
+        font-size: 6.2em;
+        margin-top: 30px;
+    }
+    header h3 {
+        font-size: 45px;
+        margin-top: 40px;
+    }
+    .carouselExampleCaptions {
+        height: 430px;
+    
+    }
+    .carousel-item img{
+        object-fit: cover;
+        height: 430px;
+        width: 100%;
+        
+    }
+    .projects img {
+        max-width: 85%;
+    }
+    .projTextArea {
+        width: 85%;
+    }
+    h2 {
+        font-size: 70px;
+        font-weight: 500;
+        color: #fd5335;
+        margin-bottom: 50px;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body{
+        max-width: 1024px;
+        background-color: #ededed;
+        box-shadow: 0 0 20px 20px  #c7c6c3; /* note 0 offset values */
+        /* clip-path: inset(0 30px 0 30px); */
+    }
+    /* nav a {
+        font-size: 1.5em; 
+        padding-top: 40px;
+    } */
+}
