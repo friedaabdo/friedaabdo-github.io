@@ -86,6 +86,8 @@ TOTAL HOURS = 35 HOURS       WITH 5 HOURS OF BUFFER
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project. 
 
+ I used Bootstrap for the carousel, and I build everything else.
+
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
@@ -107,10 +109,12 @@ function reverse(string) {
 
  **ISSUE**my buttons to the links of my projects dont show up on the screen, but they are clearly there in the html inluding the links
 
- **ISSUE**bootstrap will not register the extra div/slide i want to add for my carousel
+ **RESOLUTION** i had a styling for all a tags to be displayed as none. just had to be more specific as to which ones had to be hidden
+
+ **ISSUE** bootstrap will not register the extra div/slide i want to add for my carousel
 
  contacted Kenny, our resident bootstrap expert, hopefully he will have a solution
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+ **RESOLUTION** Kenny helped me see that I had accidentally put a div within a div, which was causing all my problems
+
+
