@@ -4,16 +4,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
 
+@import url(app.js);
+
+
+
+
+@keyframes backgroundAnimation {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}
 
 body {
     margin: auto;
     font-family: "EB+Garamond";
-    background-color: #a2a7a5;
-    position: relative;
+    
+    /* position: relative; */
     
 }
+#background {
+    height: 100vh;
+    width: 100vw;
+    /* border-radius: 100%; */
+    position: fixed;
+    /* bottom: -100vw; */
+    /* left: -50vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-position: center; */
+    /* margin:auto; */
+    background: rgb(234,200,202);
+    background: linear-gradient(313deg, rgba(234,200,202,1) 0%, rgba(50,33,58,1) 100%);
+    /* animation: backgroundAnimation 7s infinite; */
+    z-index: -10;
+}
 header {
-    background-color: #ffff85;
+    /* background-color: #bfabcb; */
     margin: auto;
     padding-top: 30px;
     
@@ -23,7 +53,7 @@ header {
     font-size: 30px;
     padding: 0 15px;
     display: block;
-    background-color: #fd5335; 
+    background-color: #ad3520; 
     box-shadow: 0 1px 4px darkgrey;
     position: fixed;
     top: 0;
@@ -32,7 +62,7 @@ header {
 }
 nav {
     display: none;
-    background-color: #fd5335;
+    background-color: #401f3e;
     padding-top: 15px;
     padding-bottom: 10px;
     position: fixed;
@@ -49,12 +79,12 @@ h1 {
     font-family: "Rock Salt";
     font-size: 4.5em;
     line-height: 120px;
-    color: #0e103d;
+    color: #32213a;
     text-align: center;
     opacity: 0.7;
 }
 header h3 {
-    color: #a2a7a5;
+    color: #bfabcb;
     font-size: 35px;
     font-style: italic;
     opacity: .6;
@@ -63,7 +93,7 @@ header h3 {
 .intro{
     text-align: center;
 }
-.sectionDivider{
+/* .sectionDivider{
     background: url('https://res.cloudinary.com/dtsnkndle/image/upload/v1600220228/portfolio%20project/portfoliosectdiv_u8ljg0.png');
     width: 100%;
     height: 100px;
@@ -80,16 +110,16 @@ header h3 {
     background: url('https://res.cloudinary.com/dtsnkndle/image/upload/v1600434806/portfolio%20project/dblLineportfoliosectdiv_lafktk.png');
     background-size: cover;
     background-position: center;  
-}
+} */
 main {
     text-align: center;
 }
 .aboutMe{
-    background-color: #0e103d;
+    /* background-color: #0e103d; */
     color: #a2a7a5;
     padding-bottom: 40px;
 }
-.carouselExampleCaptions {
+/* .carouselExampleCaptions {
     height: 200px;
 }
 .carousel-indicators {
@@ -101,12 +131,12 @@ main {
 .carousel-item img{
     object-fit: cover;
     height: 200px;
-}
+} */
 .projects div {
     margin-bottom: 30px;
 }
 .card {
-    background-color: #0e103d;
+    background-color: transparent;
  }
 .projects img {
     max-width: 90%;
@@ -123,10 +153,10 @@ h2 {
 }
 
 .projects {
-    background-color:#0e103d;
+    /* background-color:#0e103d; */
 }
 /* I borrowed this code from a codepen that i liked @ https://codepen.io/batuhanbas/pen/dyMKjmx */
-.gridContainer:hover .card {
+/* .gridContainer:hover .card {
     filter: blur(15px);
     transform: scale(0.9);
     opacity: 0.5;
@@ -138,7 +168,7 @@ h2 {
     transform: scale(1);
     opacity: 1;
     transition: 0.9s;
-}
+} */
   /* end of borrowed code */
 
 /* .projTextArea .button:hover {
@@ -159,7 +189,7 @@ h2 {
     margin-bottom: 0;
 }
 h3 {
-    color: #ffff85;
+    color: #bfabcb;
     font-size: 32px;
 }
 .projDescription {
@@ -170,7 +200,7 @@ h3 {
 }
 .projTextArea button {
     border: none;
-    background-color: #fd5335;
+    background-color: #401f3e;
     margin-bottom: 10px;
     width: 40%;
     border-radius: 5px;
@@ -193,14 +223,14 @@ textarea {
     display: block;
     margin: auto;
     border: none;
-    background-color: #fd5335;
+    background-color: #401f3e;
     padding-bottom: 10px;
     width: 40%;
     border-radius: 5px;
     color: white;
 }
 .contactMe {
-    background-color: #ffff85;
+    /* background-color: #ffff85; */
 }
 .contactMe p {
     color: #a2a7a5;
@@ -210,7 +240,7 @@ textarea {
     opacity: 0.8;
 }
 footer{
-    background-color: #0e103d;
+    background-color: #32213a;
     color: white;
 
 }
@@ -234,7 +264,7 @@ footer p {
         
     }
     .projects {
-        background-color:#0e103d;
+        /* background-color:#0e103d; */
      
     }
     .gridContainer {
@@ -244,7 +274,7 @@ footer p {
     .card {
        display: grid;
        grid-template-columns: 1fr 1fr;
-       background-color: #0e103d;
+       /* background-color: #32213a; */
     }
     .projects img {
         max-width: 90%;
@@ -271,7 +301,7 @@ footer p {
 @media screen and (min-width: 768px){
     nav {
         display: block;
-        background-color: #fd5335;
+        background-color: #401f3e;
         padding-top: 10px;
         position: fixed;
         top: 0;
@@ -319,7 +349,7 @@ footer p {
     h2 {
         font-size: 70px;
         font-weight: 500;
-        color: #fd5335;
+        color: #401f3e;
         margin-bottom: 50px;
         padding-top: 30px;
     }
@@ -327,9 +357,9 @@ footer p {
 
 @media screen and (min-width: 1024px){
     body{
-        max-width: 1024px;
+        /* max-width: 1024px;
         background-color: #ededed;
-        box-shadow: 0 0 20px 20px  #c7c6c3; /* note 0 offset values */
+        box-shadow: 0 0 20px 20px  #c7c6c3; note 0 offset values */
         /* clip-path: inset(0 30px 0 30px); */
     }
     /* nav a {

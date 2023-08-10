@@ -54,7 +54,7 @@ Your work must:
 
 Check out portfoliios that look awesome and emulate the parts that speak to you. Here are some that we like but you should google around and find stuff you're into.
 
- - [denisechandler.com](http://www.denisechandler.com/)
+ - [denisechandler.com](http://www.denise chandler.com/)
 
  - [mattfarely.ca](http://mattfarley.ca/)
 

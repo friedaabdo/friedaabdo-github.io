@@ -72,8 +72,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Learn Carousel | L | 2hr | -hr | hr |
-| Project Carousel | L | 3hr | -hr | hr |
+| Learn Carousel | L | 2hr | hr |
+| Project Carousel | L | 3hr | hr |
 | Learn About Me animation | L | 2hr | hr |
 | About Me animation | L | 3hr | hr |
 | Make own section divider | L | 1hr | hr |
@@ -84,13 +84,27 @@ Time frames are also key in the development cycle.  You have limited time to cod
 TOTAL HOURS = 35 HOURS       WITH 5 HOURS OF BUFFER
 
 ## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project. 
 
  I used Bootstrap for the carousel, and I build everything else.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+```
+const firstName = (name) => {
+    return name.split(' ')[0]
+}
+
+$('#submitBtn').on('click', (event) => {
+    if(event){
+        event.preventDefault()
+        const $thankYou = $('<p>')
+         $('.contactMe').append($thankYou)
+         $thankYou.text(`Thank you ${firstName($('#nameBar').val())}, I will contact you soon!`)
+    $('form').hide()
+    }
+    
+})
+```
 
 ```
 function reverse(string) {
