@@ -21,26 +21,26 @@
 body {
     margin: auto;
     font-family: "EB+Garamond";
-    
-    /* position: relative; */
+    overflow: visible;
     
 }
 #background {
-    height: 100vh;
-    width: 100vw;
-    /* border-radius: 100%; */
+    /* height: 100vh;
+    width: 100vw; */
+    border-radius: 100%;
     position: fixed;
     /* bottom: -100vw; */
     /* left: -50vw; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-position: center; */
+    background-position: center;
     /* margin:auto; */
     background: rgb(234,200,202);
     background: linear-gradient(313deg, rgba(234,200,202,1) 0%, rgba(50,33,58,1) 100%);
-    /* animation: backgroundAnimation 7s infinite; */
+    animation: backgroundAnimation 7s infinite;
     z-index: -10;
+    overflow:visible;
 }
 header {
     /* background-color: #bfabcb; */

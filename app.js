@@ -6,11 +6,17 @@ let API_KEY = 'AIzaSyAIijrEqSAK87cKwKPAmiS4-4vW6mPfVCU'
 console.log('this is apikey', API_KEY)
 
   let sheetAsJSON = ` https://sheets.googleapis.com/v4/spreadsheets/1NMkwZDoi2gYti0rTHXRwh-TLFi3_k3FzFTCb4H-UdOA?includeGridData=true&key=${API_KEY}&alt=json`;
-
+ var windowWidth = window.innerWidth;
+ var windowHeight = window.innerHeight;
   const hypotenuse = Math.sqrt(window.innerHeight**2 + window.innerWidth**2)
+  var halfHyp = hypotenuse/2;
+
   // console.log('this is hypotenus pre sq root', hypotenuse)
   // hypotenuse = Math.sqrt(hypotenuse)
   console.log('this is hypotenus post sq root', hypotenuse)
+  $("#background").height(hypotenuse);
+  $("#background").width(hypotenuse);
+  $("#background").offset({top: windowHeight/2-halfHyp, left: windowWidth/2-halfHyp});
 
  console.log('screen height', window.innerHeight, 'screen width', window.innerWidth)
   console.log('this is sheetAsJSON', sheetAsJSON)
@@ -21,7 +27,6 @@ const render = (projectsArr) => {
   // they will look amazing
 
   projectsArr.forEach((project) => {
-    console.log();
     $(".gridContainer").append(`
          <div class="card">
             <img class="projectPics" src=${project.image} alt="">
@@ -29,9 +34,12 @@ const render = (projectsArr) => {
                 <h3 class="projTitle">${project.title}</h3>
                 <p class="projDescription">${project.description}</p>
                 <a href=${project.link} target="_blank"><button class="button">View Project</button></a>
+                <a href=${project.frontGH} target="_blank"><button class="button">View Github Repo</button></a>
             </div>
-        </div>`);
-  });
+        </div>`)
+      }
+      );
+
 };
 
 $.ajax({ url: sheetAsJSON }).then((data) => {
@@ -43,6 +51,8 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
       image: project.values[1].formattedValue,
       description: project.values[2].formattedValue,
       link: project.values[3].formattedValue,
+      frontGH: project.values[4].formattedValue,
+      backGH: project.values[5].formattedValue
     };
   });
   render(projects);
